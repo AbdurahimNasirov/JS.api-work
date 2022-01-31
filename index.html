@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="side-bar">
+            <div class="side-bar__content">
+                <input class="search-accounts" id="elastic" type="text" name="" placeholder="Поиск пользователя..">
+                <ul class="accounts-list">
+                </ul>
+                <button class="add-account-btn"> Добавить пользователя </button>
+            </div>
+        </div>
+        <div class="max-text" id="msg"><h2>No more than 25 characters</h2></div>
+        <div class="accounts-post-bar">
+            <h1 class="title-ALL" id="title">Выберите нужного пользователя</h1>
+            <input type="searchPosts" class="search-post anactive" id="searchpost" placeholder="Поиск поста..">
+            <div class="list-posts">
+            </div>
+            <div class="user-post-text-block">
+                <input type="title" name="" id="titleUser" class="inputborders">
+                <textarea placeholder="Начните писать..." class="textResize" id="bodyPost"></textarea>
+                <button class="delete-post ">удалить пост</button>
+            </div>
+            <button  class=" deletePost anactive" id="delteUser" >Удалить пользователя</button>
+            <div class="add-post-btn anactive" id="btn-post">Добавить пост</div>
+        </div>
+    </main>
+    <div class="overlay"></div>
+    <div class="add-post">
+        <h2 class="title-control">Добавить новый пост</h2>
+        <h4 class="name-post">Название нового поста</h4>
+        <textarea type="text" class="inputs" name="" placeholder="Название поста..." required
+            id="new-post-title"></textarea>
+        <h4 class="text-post">Пост</h4>
+        <textarea id="text-new-post" placeholder="Напищите о чем думаете..." required></textarea>
+        <h4 class="name-post">Выберите пользователя</h4>
+        <textarea type="text" class="inputs" name="" id="user-new-post" placeholder="Поиск пользователя..."
+            required></textarea>
+        <div class="search-users"><ul class="users-names-list" id="list"></ul></div>
+        <button type="reset" class="btn remove-btn" id="remove-btn">Отмена</button>
+        <button type="button" class="btn add-btn" id="add-btn">Подтвердить</button>
+    </div>
+    <div class="add-user">
+        <h2 class="title-control">Добавить пользователя</h2>
+        <h4 class="name-post new-user">Имя пользователя</h4>
+        <textarea type="text" class="inputs center-input" name="" id="name-new-user" placeholder="Поиск пользователя..."
+            required></textarea>
+        <h4 class="name-post">Email пользователя</h4>
+        <textarea type="email" class="inputs" name="" id="email-new-user" placeholder="Название поста..."
+            required></textarea>
+        <button type="reset" class="btn remove-btn" id="remove-btn">Отмена</button>
+        <button type="button" class="btn add-btn" id="add-btn-user">Подтвердить</button>
+    </div>
+    <script src="./js/search.js"></script>
+    <script src="./js/infos.js"></script>
+</body>
+
+</html>
